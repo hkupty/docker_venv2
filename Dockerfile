@@ -1,7 +1,7 @@
 FROM base/archlinux
 MAINTAINER Henry "Ingvij" Kupty <hkupty@gmail.com>
 
-RUN pacman -Sy python2{,-virtualenv,-pip} base{,-devel}
+RUN pacman -Sy python2{,-virtualenv,-pip} base{,-devel} --noconfirm
 
 RUN virtualenv-2.7 /opt/.venv
 
